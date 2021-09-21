@@ -1,3 +1,7 @@
+print("Выберите число от 1 до 5")
+ans = int(input())
+
+
 def f():
     a = int(input())
     b = int(input())
@@ -35,8 +39,16 @@ def f_5():
     print(f"Разность: {abs(a) / abs(b)}")
 
 
-f()
-f_2()
-f_3()
-f_4()
-f_5()
+if ans == 1:
+    f()
+elif ans == 2:
+    f_2()
+elif ans == 3:
+    f_3()
+elif ans == 4:
+    f_4()
+elif ans == 5:
+    f_5()
+else:
+    print("Error, try again")
+    ans = int(input())
