@@ -51,4 +51,3 @@ elif ans == 5:
     f_5()
 else:
     print("Error, try again")
-    ans = int(input())
