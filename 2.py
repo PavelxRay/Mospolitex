@@ -1,35 +1,44 @@
-print("Выберите номер задания от 1 до 7")
+print("Выберите номер задания от 1 до 7:")
 
 
 def f():
-    a, b = 2, 3
+    print("Введите две переменные:")
+    sp = input().split()
+    a, b = sp[0], sp[1]
     a, b = b, a
     print(a, b)
 
 
 def f_2():
-    a, b, c = 2, 3, 4
+    print("Введите три переменные:")
+    sp = input().split()
+    a, b, c = sp[0], sp[1], sp[2]
     a, b, c = b, c, a
     print(a, b, c)
 
 
 def f_3():
-    a, b, c = 2, 3, 4
+    print("Введите три переменные:")
+    sp = input().split()
+    a, b, c = sp[0], sp[1], sp[2]
     a, b, c = c, a, b
     print(a, b, c)
 
 
 def f_4():
+    print("Введите число:")
     x = int(input())
     print(3 * x ** 6 - 6 * x ** 2 - 7)
 
 
 def f_5():
+    print("Введите число:")
     x = int(input())
     print(4 * (x - 3) ** 6 - 7 * (x - 3) ** 3 + 2)
 
 
 def f_6():
+    print("Введите число:")
     a = int(input())
     b = a * a
     b *= b
@@ -37,6 +46,7 @@ def f_6():
 
 
 def f_7():
+    print("Введите число:")
     a = int(input())
     a = a * a
     b = a ** 0.5 * a
