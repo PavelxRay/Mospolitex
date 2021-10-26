@@ -80,7 +80,7 @@ def f_7():
     print("Введите сторону C:")
     c = int(input())
     sp = sorted([a, b, c])
-    if sp[0] + sp[1] < sp[2]:
+    if sp[0] + sp[1] > sp[2]:
         print(True)
     else:
         print(False)
