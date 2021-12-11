@@ -51,7 +51,7 @@ def f_4():
         sp.append(arr)
         arr += 1
     print(f"Массив до изменений {sp}")
-    if not(n % 2):
+    if not (n % 2):
         for i in range(1, n // 2 + 1):
             sp1.append(sp[0])
             sp1.append(sp[-1])
@@ -83,18 +83,19 @@ def f_5():
         sp.append(arr)
         arr += 1
     print(f"Массив до изменений {sp}")
-    for i in sp:
-        if i % 2:
-            spnch.append(i)
+    for i in range(len(sp)):
+        if i % 2 == 0:
+            spnch.append(sp[i])
         else:
-            spch.append(i)
-    spch = sorted(spch)
+            spch.append(sp[i])
     spnch = sorted(spnch)
+    spch = reversed(sorted(spch))
 
     for i in spnch:
         finalsp.append(i)
     for i in spch:
         finalsp.append(i)
+
     print(f"Массив после изменений: {finalsp}")
     f_ans()
 
